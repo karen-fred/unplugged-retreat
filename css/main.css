@@ -368,6 +368,22 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.map-container figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width:100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
 .contact {
   background-color: #2a423a;
   display: flex;
@@ -375,6 +391,8 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
 }
+
+
 /*----------------------------------------
     FAQ PAGE
 -----------------------------------------*/
