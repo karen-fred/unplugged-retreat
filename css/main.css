@@ -178,12 +178,10 @@ header figure {
 
 .header-divider {
   background: #3a3a3a; 
-  width: 100%;
   height: 1px;
-  margin: 18px 0 20px 0;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
-
-
 
 header nav {
   display: flex;
@@ -191,16 +189,15 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  text-transform: uppercase;
   font-weight: 700;
+  font-size: 1.125em;
 }
 
 header nav ul {
-  display: flex;
-  font-size: 1.125em;
-  font-weight: 700;
-  justify-content: space-around;
-  text-transform: uppercase;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 header nav ul li {
@@ -232,14 +229,18 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #527158;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  }
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
 
 footer .copyright {
   margin: 20px 0;
@@ -267,14 +268,6 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500; 
   line-height: 1.2; 
-}
-
-header figure {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 /*Aside*/
@@ -325,16 +318,20 @@ input[type=button] {
   align-items: center;
 }
 
+.features h2 {
+  margin-bottom: 60px;
+}
+
 .features article {
-  width: 60%;
+  width: 90%;
   margin: 30px 0;
 }
 
 .features .features-item-description {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features i {
@@ -429,10 +426,6 @@ input[type=button] {
 .faq h2 {
   margin-bottom: 40px;
   line-height: 1;
-}
-
-.faq-content {
-  margin-bottom: 50px;
 }
 
 .faq-content {
@@ -563,7 +556,7 @@ input[type=button] {
  
     header .content-wrapper {
         width: 100%;
-        justify-content:space-between;
+        justify-content: space-between;
     }
 
     header .figure {
@@ -571,7 +564,7 @@ input[type=button] {
     }
  
     header nav {
-        width: 20%
+        width: 30%
     }
  
     header nav ul {
@@ -612,6 +605,10 @@ input[type=button] {
  
     /* Features */
  
+    .features h2 {
+      margin-bottom: 20px;
+    }
+    
     .features article {
       display: flex;
       justify-content: center;
@@ -621,7 +618,11 @@ input[type=button] {
     }
  
     .features .features-item-description {
-        width: 50%;
+        width: 62%;
+    }
+
+    .features i {
+      margin-bottom: 30px;
     }
  
     /* Reviews */
@@ -669,8 +670,33 @@ input[type=button] {
 
 /*ABOUT PAGE*/
 
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
 .map figure {
   padding-bottom: 45.5%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-content h4 {
+  font-size: 1.5em;
 }
 
 /*FAQ PAGE*/
@@ -756,13 +782,12 @@ aside .content-wrapper .form {
 
 /* Features */
 .features h2 {
- width: 75%
+  width: 90%;
 }
 
 .features article {
- flex-basis: 50%;
+  flex-basis: 33%;
 }
-
 /* Reviews */ 
 .reviews article div {
  width: 40%;
@@ -875,5 +900,3 @@ FAQ Page
   h3 {
     page-break-after: avoid;
   }
-}
-
