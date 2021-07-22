@@ -208,6 +208,7 @@ header nav ul li {
 }
 
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -234,7 +235,11 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  color: #527158;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  }
 
 footer .copyright {
   margin: 20px 0;
@@ -361,6 +366,10 @@ input[type=button] {
   margin: 20px 0;
 }
 
+/*Contact */
+
+
+
 /*----------------------------------------
     ABOUT PAGE
 -----------------------------------------*/
@@ -389,7 +398,7 @@ input[type=button] {
   left:0;
 }
 
-.contact {
+.contact-section {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
@@ -410,17 +419,30 @@ input[type=button] {
 }
 
 .faq .content-wrapper {
-  justify-content: space-between;
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .faq h2 {
-  width: 100%;
+  margin-bottom: 40px;
   line-height: 1;
 }
 
 .faq-content {
-  flex-basis: 40%;
+  margin-bottom: 50px;
 }
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
+}
+
 
 
 
@@ -651,6 +673,28 @@ input[type=button] {
   padding-bottom: 45.5%;
 }
 
+/*FAQ PAGE*/
+
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 45%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+.faq h4,
+.faq p {
+    font-size: .875em;
+    line-height: 1.125;
+}
+
+
 
 /*DESKTOP STYLES*/
 
@@ -740,10 +784,16 @@ About Page
 FAQ Page
 ========================================================================== */
 .faq h2 {
- width: 100%;
+  width: 100%;
+  font-size: 3em;
+}
+  
+.faq h4,
+.faq p {
+    font-size: 1.125em;
+    line-height: 1;
 }
 
-}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
